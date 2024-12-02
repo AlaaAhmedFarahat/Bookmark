@@ -1,0 +1,87 @@
+body{
+    background-color: #F7ECDE;
+}
+h1 {
+  font-family: Pacifico;
+  color: #352E28;
+  font-size: 50px;
+  font-weight: 500;
+  position: relative;
+}
+
+h1::after{
+  content: "";
+  position: absolute;
+  background-color:#fec160bd;
+  height: 18px;
+  width: 23%;
+  right: 39%;
+  top: 65px;
+  bottom: 0px;
+  transition: all 0.5s;
+  z-index: 555;
+}
+
+h1:hover::after{
+  height: 30px;
+}
+
+h1::before{
+  content: "";
+  position: absolute;
+  border-bottom: #352E28 dotted 2px;
+  height: 3px;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+h2 {
+  font-family: Righteous;
+  color: #5AA757;
+}
+
+label{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form{
+    position: relative;
+}
+
+.form::after{
+  content: "";
+  position: absolute;
+  border-bottom: #352E28 dotted 2px;
+  height: 3px;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  transition: all 0.5s;
+}
+
+table tr td button.visit{
+border: solid 2px green;
+padding: 5px 15px;
+background-color: white;
+border-radius: 10px;
+}
+
+table tr td button.visit:hover{
+background-color: green;
+color: white;
+}
+
+table tr td button.delete{
+border: solid 2px red;
+padding: 5px 15px;
+background-color: white;
+border-radius: 10px;
+}
+
+table tr td button.delete:hover{
+background-color: red;
+color: white;
+}
